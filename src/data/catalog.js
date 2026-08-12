@@ -14,6 +14,17 @@ export const categoriaBackgrounds = {
   "acessorios": "/images/categorias/acessoriospilar.webp",
 };
 
+export const categoriaHomeBackgrounds = {
+  "ferramentas-eletricas": "/images/categorias/ferramentaeletricapilarh.webp",
+  "andaimes-elevacao": "/images/categorias/andaimepilarh.webp",
+  "concretagem-compactacao": "/images/categorias/concretagempilarh.webp",
+  "corte-demolicao": "/images/categorias/cortedemolicaopilarh.webp",
+  "furacao-corte-demolicao": "/images/categorias/cortedemolicaopilarh.webp",
+  "geradores-bombas": "/images/categorias/geradorespilarh.webp",
+  "geradores-bombas-compressores": "/images/categorias/geradorespilarh.webp",
+  "acessorios": "/images/categorias/acessoriospilarh.webp",
+};
+
 export const CATEGORIES = [
   {
     id: "acessorios",

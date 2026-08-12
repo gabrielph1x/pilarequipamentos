@@ -12,7 +12,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/config';
-import { CATEGORIES, PRODUCTS } from '../data/catalog';
+import { CATEGORIES, PRODUCTS, categoriaHomeBackgrounds } from '../data/catalog';
 import ProductCard from '../components/ProductCard';
 import CategoryNavScroll from '../components/CategoryNavScroll';
 import ScrollReveal from '../components/ScrollReveal';
@@ -255,7 +255,7 @@ export default function Home() {
                 >
                   <div className="aspect-[16/9] w-full overflow-hidden bg-[#523132]/20">
                     <img
-                      src={category.bannerImage}
+                      src={categoriaHomeBackgrounds[category.slug] || category.bannerImage}
                       alt={category.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
