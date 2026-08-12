@@ -78,17 +78,24 @@ export function QuoteProvider({ children }) {
   const totalItemsCount = quoteItems.reduce((acc, item) => acc + item.quantity, 0);
 
   /**
-   * Gera EXCLUSIVAMENTE a URL do WhatsApp (https://wa.me/...) contendo o parâmetro 'text'
-   * com a mensagem pré-preenchida codificada via encodeURIComponent.
-   * IMPORTANTE: Esta função NUNCA altera nem retorna o label/texto visível dos botões na tela.
+   * 1. URL do WhatsApp para Atendimento Genérico / Institucional.
+   * Totalmente ISOLADA do estado do carrinho/orçamento.
+   * NUNCA inclui lista de produtos do carrinho.
    */
-  const getWhatsAppQuoteUrl = (whatsappNumber = DEFAULT_WHATSAPP_NUMBER, customMessage = null) => {
+  const getWhatsAppGeneralUrl = (whatsappNumber = DEFAULT_WHATSAPP_NUMBER, customText = null) => {
     const targetNumber = whatsappNumber || DEFAULT_WHATSAPP_NUMBER;
     const cleanNumber = targetNumber.replace(/\D/g, '');
+    const message = customText || "Olá! Gostaria de falar com um consultor da Pilar Equipamentos sobre locação de equipamentos.";
+    return `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
+  };
 
-    if (customMessage) {
-      return `https://wa.me/${cleanNumber}?text=${encodeURIComponent(customMessage)}`;
-    }
+  /**
+   * 2. URL do WhatsApp EXCLUSIVA para a página de Orçamento (Orcamento.jsx).
+   * Formatada dinamicamente com a lista de itens do carrinho.
+   */
+  const getWhatsAppQuoteUrl = (whatsappNumber = DEFAULT_WHATSAPP_NUMBER) => {
+    const targetNumber = whatsappNumber || DEFAULT_WHATSAPP_NUMBER;
+    const cleanNumber = targetNumber.replace(/\D/g, '');
 
     if (quoteItems.length === 0) {
       const defaultText = encodeURIComponent(
@@ -120,6 +127,7 @@ export function QuoteProvider({ children }) {
         clearQuote,
         isInQuote,
         totalItemsCount,
+        getWhatsAppGeneralUrl,
         getWhatsAppQuoteUrl,
         toast,
         showToastNotification

@@ -14,7 +14,7 @@ import Breadcrumb from '../components/Breadcrumb';
 import { useQuote } from '../context/QuoteContext';
 
 export default function Contato() {
-  const { getWhatsAppQuoteUrl } = useQuote();
+  const { getWhatsAppGeneralUrl } = useQuote();
 
   return (
     <div className="bg-pilar-bg space-y-12 pb-12">
@@ -23,17 +23,18 @@ export default function Contato() {
         <div className="max-w-7xl mx-auto space-y-3">
           <Breadcrumb items={[{ label: 'Contato & Unidades' }]} />
           <h1 className="text-3xl md:text-5xl font-black font-display tracking-tight text-white flex items-center gap-3">
-            <Building2 className="w-8 h-8 text-pilar-red" />
-            <span>Fale com a <span className="text-pilar-red">Pilar Equipamentos</span></span>
+            <Phone className="w-8 h-8 text-pilar-red" />
+            <span>Fale com a Pilar Equipamentos</span>
           </h1>
-          <p className="text-sm md:text-base text-slate-300 max-w-2xl leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl leading-relaxed">
             Atendimento direto e sem burocracia. Entre em contato pelo WhatsApp com a unidade mais próxima do seu projeto.
           </p>
         </div>
       </section>
 
+      {/* Container Principal */}
       <div className="max-w-7xl mx-auto px-4 space-y-12">
-        {/* Banner Informativo (Sem Formulário de Contato - Requirement #9) */}
+        {/* Banner Informativo */}
         <div className="bg-white rounded-2xl p-6 border border-pilar-border shadow-pilar-sm flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-whatsapp/10 text-whatsapp rounded-xl flex items-center justify-center font-bold">
@@ -118,7 +119,7 @@ export default function Contato() {
                 {/* Botão de WhatsApp por Unidade (CTA Principal - Requirement #9) */}
                 <div className="pt-2">
                   <a
-                    href={getWhatsAppQuoteUrl(unit.whatsapp)}
+                    href={getWhatsAppGeneralUrl(unit.whatsapp, `Olá! Gostaria de falar com a equipe de atendimento de ${unit.shortName}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-whatsapp hover:bg-whatsapp-hover text-white py-4 px-6 rounded-2xl font-extrabold text-sm flex items-center justify-center gap-2.5 transition-all shadow-glow-green min-h-[44px]"

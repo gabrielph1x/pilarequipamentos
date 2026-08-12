@@ -18,7 +18,7 @@ import CategoryNavScroll from '../components/CategoryNavScroll';
 import { useQuote } from '../context/QuoteContext';
 
 export default function Home() {
-  const { getWhatsAppQuoteUrl } = useQuote();
+  const { getWhatsAppGeneralUrl } = useQuote();
   const location = useLocation();
 
   useEffect(() => {
@@ -75,7 +75,7 @@ export default function Home() {
               </a>
 
               <a
-                href={getWhatsAppQuoteUrl()}
+                href={getWhatsAppGeneralUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-whatsapp hover:bg-whatsapp-hover text-white px-6 py-3.5 sm:py-4 rounded-xl font-extrabold text-sm sm:text-base shadow-glow-green transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 min-h-[44px]"
@@ -356,7 +356,7 @@ export default function Home() {
 
                 <div className="pt-4 border-t border-pilar-terracotta/30 flex flex-col sm:flex-row gap-3">
                   <a
-                    href={getWhatsAppQuoteUrl(unit.whatsapp)}
+                    href={getWhatsAppGeneralUrl(unit.whatsapp, `Olá! Gostaria de falar com o atendimento da unidade ${unit.shortName}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 bg-whatsapp hover:bg-whatsapp-hover text-white px-4 py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-glow-green min-h-[44px]"

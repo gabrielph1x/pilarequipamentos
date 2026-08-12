@@ -21,7 +21,7 @@ import { DEFAULT_WHATSAPP_NUMBER } from '../data/config';
 export default function ProductDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const { addToQuote, isInQuote, getWhatsAppQuoteUrl } = useQuote();
+  const { addToQuote, isInQuote, getWhatsAppGeneralUrl } = useQuote();
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [imgError, setImgError] = useState(false);
@@ -44,8 +44,8 @@ export default function ProductDetail() {
     }, 3000);
   };
 
-  // URL do WhatsApp com mensagem pré-preenchida específica (parâmetro ?text= da URL, mantendo label do botão fixo)
-  const whatsappUrl = getWhatsAppQuoteUrl(
+  // URL do WhatsApp com mensagem pré-preenchida específica (totalmente isolada do estado do carrinho)
+  const whatsappUrl = getWhatsAppGeneralUrl(
     DEFAULT_WHATSAPP_NUMBER,
     `Olá! Gostaria de solicitar um orçamento para o equipamento: ${product.name} (Categoria: ${product.categoryName}).`
   );
@@ -57,6 +57,7 @@ export default function ProductDetail() {
       {/* Container Principal */}
       <div className="max-w-7xl mx-auto px-4 pt-6 space-y-8">
         <Breadcrumb
+          isDark={false}
           items={[
             { label: product.categoryName, url: `/categoria/${product.categorySlug}` },
             { label: product.name }

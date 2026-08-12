@@ -6,7 +6,7 @@ import { CATEGORIES } from '../data/catalog';
 import { useQuote } from '../context/QuoteContext';
 
 export default function Footer() {
-  const { getWhatsAppQuoteUrl } = useQuote();
+  const { getWhatsAppGeneralUrl } = useQuote();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -23,7 +23,7 @@ export default function Footer() {
             </p>
           </div>
           <a
-            href={getWhatsAppQuoteUrl()}
+            href={getWhatsAppGeneralUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 bg-whatsapp hover:bg-whatsapp-hover text-white px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base shadow-glow-green transition-all transform hover:-translate-y-0.5 min-h-[44px] shrink-0"
@@ -49,7 +49,7 @@ export default function Footer() {
           <p className="text-xs text-slate-300 leading-relaxed">
             Desde 1985 oferecendo soluções completas em locação de equipamentos leves e ferramentas para a construção civil em Belo Horizonte e Conceição do Mato Dentro.
           </p>
-          <div className="flex items-center gap-2 text-xs text-slate-400 pt-1">
+          <div className="flex items-center gap-2 text-slate-400 pt-1">
             <Clock className="w-4 h-4 text-pilar-red shrink-0" />
             <span>{COMPANY_INFO.businessHours}</span>
           </div>
@@ -126,7 +126,7 @@ export default function Footer() {
             ))}
           </div>
           <a
-            href={getWhatsAppQuoteUrl(COMPANY_INFO.units[0].whatsapp)}
+            href={getWhatsAppGeneralUrl(COMPANY_INFO.units[0].whatsapp, "Olá! Gostaria de falar com o atendimento da Unidade Belo Horizonte.")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs text-whatsapp hover:underline font-bold pt-1"
@@ -159,7 +159,7 @@ export default function Footer() {
             ))}
           </div>
           <a
-            href={getWhatsAppQuoteUrl(COMPANY_INFO.units[1].whatsapp)}
+            href={getWhatsAppGeneralUrl(COMPANY_INFO.units[1].whatsapp, "Olá! Gostaria de falar com o atendimento da Unidade Conceição do Mato Dentro.")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs text-whatsapp hover:underline font-bold pt-1"

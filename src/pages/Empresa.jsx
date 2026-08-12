@@ -28,7 +28,7 @@ const categoryIconMap = {
 };
 
 export default function Empresa() {
-  const { getWhatsAppQuoteUrl } = useQuote();
+  const { getWhatsAppGeneralUrl } = useQuote();
 
   return (
     <div className="bg-pilar-bg space-y-12 pb-12">
@@ -265,7 +265,7 @@ export default function Empresa() {
 
                 <div className="pt-3 border-t border-slate-200">
                   <a
-                    href={getWhatsAppQuoteUrl(unit.whatsapp)}
+                    href={getWhatsAppGeneralUrl(unit.whatsapp, `Olá! Gostaria de falar com o atendimento da unidade ${unit.shortName}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-whatsapp hover:bg-whatsapp-hover text-white px-4 py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-glow-green min-h-[44px]"
@@ -289,7 +289,7 @@ export default function Empresa() {
           </p>
           <div>
             <a
-              href={getWhatsAppQuoteUrl()}
+              href={getWhatsAppGeneralUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-whatsapp hover:bg-whatsapp-hover text-white px-8 py-4 rounded-xl font-extrabold text-base shadow-pilar-lg transition-all transform hover:scale-105 min-h-[44px]"
