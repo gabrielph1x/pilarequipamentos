@@ -30,7 +30,7 @@ export default function App() {
         <ScrollToTop />
         <div className="flex flex-col min-h-screen bg-pilar-bg font-sans text-pilar-charcoal antialiased">
           <Header />
-          <main className="flex-grow">
+          <main className="flex-1 w-full">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/empresa" element={<Empresa />} />

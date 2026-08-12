@@ -31,7 +31,7 @@ export default function Empresa() {
   const { getWhatsAppQuoteUrl } = useQuote();
 
   return (
-    <div className="bg-pilar-bg min-h-screen space-y-12 pb-16">
+    <div className="bg-pilar-bg space-y-12 pb-12">
       {/* 1. HERO / TOPO DA PÁGINA INSTITUCIONAL */}
       <section className="bg-pilar-charcoal text-white relative py-16 px-4 overflow-hidden border-b-4 border-pilar-red">
         <div

@@ -10,7 +10,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#332929] text-slate-300 border-t-4 border-pilar-red mt-auto pb-28 sm:pb-12 w-full overflow-x-hidden">
+    <footer className="bg-[#332929] text-slate-300 border-t-4 border-pilar-red mt-auto w-full overflow-x-hidden">
       {/* Upper Footer CTA Strip */}
       <div className="bg-[#523132] py-8 px-4 border-b border-pilar-terracotta/30 w-full">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">

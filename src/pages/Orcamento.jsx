@@ -26,7 +26,7 @@ export default function Orcamento() {
   } = useQuote();
 
   return (
-    <div className="bg-pilar-bg min-h-screen space-y-8 pb-16">
+    <div className="bg-pilar-bg space-y-8 pb-12">
       {/* Header Banner */}
       <section className="bg-pilar-charcoal text-white py-12 px-4 border-b-4 border-pilar-red">
         <div className="max-w-7xl mx-auto space-y-3">

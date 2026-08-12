@@ -36,9 +36,9 @@ export default function CategoryListing() {
   }, [currentCategory, searchQuery, sortBy]);
 
   return (
-    <div className="bg-pilar-bg min-h-screen space-y-6 pb-16 w-full overflow-x-hidden">
+    <div className="bg-pilar-bg pb-12 w-full overflow-x-hidden">
       {/* Category Banner Header */}
-      <section className="bg-[#332929] text-white relative py-8 sm:py-12 px-4 border-b-4 border-pilar-red overflow-hidden w-full">
+      <section className="bg-[#332929] text-white relative py-8 sm:py-12 px-4 border-b border-pilar-wine overflow-hidden w-full">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-25"
           style={{ backgroundImage: `url('${currentCategory.bannerImage}')` }}
@@ -54,10 +54,10 @@ export default function CategoryListing() {
         </div>
       </section>
 
-      {/* Categories Scroll Quick Access */}
+      {/* Categories Scroll Quick Access - Direct seamless transition */}
       <CategoryNavScroll activeSlug={currentCategory.slug} />
 
-      <div className="max-w-7xl mx-auto px-4 space-y-6 w-full">
+      <div className="max-w-7xl mx-auto px-4 pt-6 space-y-6 w-full">
         {/* Barra de Busca e Ordenação Otimizada para Mobile (Correção Bug 3 & 4) */}
         <div className="bg-white rounded-2xl p-4 border border-pilar-border shadow-pilar-sm space-y-3 md:space-y-0 md:flex md:items-center md:justify-between gap-4">
           

@@ -21,7 +21,7 @@ import { DEFAULT_WHATSAPP_NUMBER } from '../data/config';
 export default function ProductDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const { addToQuote, isInQuote } = useQuote();
+  const { addToQuote, isInQuote, getWhatsAppQuoteUrl } = useQuote();
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [imgError, setImgError] = useState(false);
@@ -44,15 +44,16 @@ export default function ProductDetail() {
     }, 3000);
   };
 
-  // URL do WhatsApp com mensagem pré-preenchida específica (Seção 7)
-  const whatsappUrl = `https://wa.me/${DEFAULT_WHATSAPP_NUMBER}?text=${encodeURIComponent(
+  // URL do WhatsApp com mensagem pré-preenchida específica (parâmetro ?text= da URL, mantendo label do botão fixo)
+  const whatsappUrl = getWhatsAppQuoteUrl(
+    DEFAULT_WHATSAPP_NUMBER,
     `Olá! Gostaria de solicitar um orçamento para o equipamento: ${product.name} (Categoria: ${product.categoryName}).`
-  )}`;
+  );
 
   const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'%3E%3Crect width='600' height='450' fill='%3C332929'/%3E%3Cpath d='M250 150 H350 V190 H310 V290 H290 V190 H250 Z' fill='%23B72527'/%3E%3Ctext x='300' y='340' font-family='sans-serif' font-size='20' fill='%23FFFFFF' text-anchor='middle'%3EPILAR EQUIPAMENTOS%3C/text%3E%3C/svg%3E";
 
   return (
-    <div className="bg-pilar-bg min-h-screen space-y-12 pb-16">
+    <div className="bg-pilar-bg space-y-12 pb-12">
       {/* Container Principal */}
       <div className="max-w-7xl mx-auto px-4 pt-6 space-y-8">
         <Breadcrumb

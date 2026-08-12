@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   ShieldCheck, 
   Truck, 
@@ -19,6 +19,18 @@ import { useQuote } from '../context/QuoteContext';
 
 export default function Home() {
   const { getWhatsAppQuoteUrl } = useQuote();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo === 'secao-categorias' || location.hash === '#secao-categorias') {
+      const el = document.getElementById('secao-categorias');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 150);
+      }
+    }
+  }, [location]);
 
   // Equipamentos em Destaque
   const featuredProducts = PRODUCTS;
@@ -203,7 +215,7 @@ export default function Home() {
       </section>
 
       {/* 4. SEÇÃO CATEGORIAS DE PRODUTOS */}
-      <section className="py-12 sm:py-16 px-4 bg-pilar-bg w-full">
+      <section id="secao-categorias" className="py-12 sm:py-16 px-4 bg-pilar-bg w-full">
         <div className="max-w-7xl mx-auto space-y-8">
           <div className="text-center space-y-2 max-w-2xl mx-auto">
             <span className="text-xs font-bold text-pilar-red uppercase tracking-wider">

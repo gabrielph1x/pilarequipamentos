@@ -17,7 +17,7 @@ export default function Contato() {
   const { getWhatsAppQuoteUrl } = useQuote();
 
   return (
-    <div className="bg-pilar-bg min-h-screen space-y-12 pb-16">
+    <div className="bg-pilar-bg space-y-12 pb-12">
       {/* Top Banner */}
       <section className="bg-pilar-charcoal text-white py-12 px-4 border-b-4 border-pilar-red">
         <div className="max-w-7xl mx-auto space-y-3">

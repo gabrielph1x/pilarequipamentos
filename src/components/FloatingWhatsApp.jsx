@@ -26,7 +26,7 @@ export default function FloatingWhatsApp() {
 
         {/* Tooltip Hover visible on desktop */}
         <span className="absolute right-16 bg-[#332929] text-white text-xs font-semibold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-pilar-md border border-pilar-terracotta pointer-events-none hidden sm:inline-block">
-          {totalItemsCount > 0 ? `Enviar ${totalItemsCount} item(ns) no WhatsApp` : 'Falar no WhatsApp'}
+          Falar no WhatsApp
         </span>
       </a>
     </div>
