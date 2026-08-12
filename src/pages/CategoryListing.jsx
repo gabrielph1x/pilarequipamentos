@@ -5,6 +5,7 @@ import { CATEGORIES, PRODUCTS } from '../data/catalog';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductCard from '../components/ProductCard';
 import CategoryNavScroll from '../components/CategoryNavScroll';
+import ScrollReveal from '../components/ScrollReveal';
 
 export default function CategoryListing() {
   const { slug } = useParams();
@@ -45,12 +46,14 @@ export default function CategoryListing() {
         />
         <div className="relative z-10 max-w-7xl mx-auto space-y-2.5">
           <Breadcrumb items={[{ label: currentCategory.title }]} />
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black font-display tracking-tight text-white">
-            {currentCategory.title}
-          </h1>
-          <p className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl leading-relaxed">
-            {currentCategory.description}
-          </p>
+          <ScrollReveal direction="up" duration={600}>
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black font-display tracking-tight text-white">
+              {currentCategory.title}
+            </h1>
+            <p className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl leading-relaxed mt-1">
+              {currentCategory.description}
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -58,10 +61,10 @@ export default function CategoryListing() {
       <CategoryNavScroll activeSlug={currentCategory.slug} />
 
       <div className="max-w-7xl mx-auto px-4 pt-6 space-y-6 w-full">
-        {/* Barra de Busca e Ordenação Otimizada para Mobile (Correção Bug 3 & 4) */}
+        {/* Barra de Busca e Ordenação Otimizada para Mobile */}
         <div className="bg-white rounded-2xl p-4 border border-pilar-border shadow-pilar-sm space-y-3 md:space-y-0 md:flex md:items-center md:justify-between gap-4">
           
-          {/* Campo de Busca com Placeholder Otimizado (Correção Bug 3) */}
+          {/* Campo de Busca com Placeholder Otimizado */}
           <div className="relative w-full md:w-80 lg:w-96">
             <input
               type="text"
@@ -73,7 +76,7 @@ export default function CategoryListing() {
             <Search className="w-4 h-4 text-slate-400 absolute left-3 top-3 pointer-events-none" />
           </div>
 
-          {/* Linha de Ordenação & Contador Reorganizados em 2 Linhas no Mobile (Correção Bug 4) */}
+          {/* Linha de Ordenação & Contador */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between md:justify-end gap-2.5 w-full md:w-auto pt-1 md:pt-0 border-t md:border-t-0 border-slate-100">
             {/* Badge de Contador de Resultados */}
             <span className="text-xs font-bold text-slate-700 bg-slate-100 px-3 py-2 rounded-xl text-center shrink-0 border border-slate-200">
@@ -99,11 +102,13 @@ export default function CategoryListing() {
           </div>
         </div>
 
-        {/* Grid Responsivo de Cards de Produto (Requirement #6 & #11) */}
+        {/* Grid Responsivo de Cards de Produto */}
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 items-stretch">
-            {filteredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+            {filteredProducts.map((product, idx) => (
+              <ScrollReveal key={product.id} direction="up" delay={(idx % 4) * 75} duration={500}>
+                <ProductCard product={product} />
+              </ScrollReveal>
             ))}
           </div>
         ) : (
