@@ -1,0 +1,401 @@
+{
+  "downloadedCount": 56,
+  "failedCount": 0,
+  "replacedCount": 56,
+  "createdCount": 0,
+  "failedDetails": [],
+  "updatedFiles": [
+    {
+      "name": "Guincho de Coluna",
+      "slug": "guincho-de-coluna",
+      "path": "public/images/products/guincho-de-coluna.jpg",
+      "size": "24.8 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/7188d5b20f71d68b7837c91adacfed1f.jpg"
+    },
+    {
+      "name": "Escada Extensiva e Tipo Pintor",
+      "slug": "escada-extensiva-e-tipo-pintor",
+      "path": "public/images/products/escada-extensiva-e-tipo-pintor.jpg",
+      "size": "22.2 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/cd17a0a02e40571620adee1ce62b4c5d.jpg"
+    },
+    {
+      "name": "Talha Manual de Corrente de 0,5 a 3 t",
+      "slug": "talha-manual-de-corrente-de-0-5-a-3-t",
+      "path": "public/images/products/talha-manual-de-corrente-de-0-5-a-3-t.jpg",
+      "size": "17.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/c37acb225337b7d93371b97b6d3b82e1.jpg"
+    },
+    {
+      "name": "Piso Metálico",
+      "slug": "piso-metalico",
+      "path": "public/images/products/piso-metalico.jpg",
+      "size": "16.3 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/01bcd0cff805d14f043925544a424ed4.jpg"
+    },
+    {
+      "name": "Guarda Corpo",
+      "slug": "guarda-corpo",
+      "path": "public/images/products/guarda-corpo.jpg",
+      "size": "19.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/126754a544547fee6efda810f1a309ae.jpg"
+    },
+    {
+      "name": "Sapata Ajustável",
+      "slug": "sapata-ajustavel",
+      "path": "public/images/products/sapata-ajustavel.jpg",
+      "size": "21.1 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/49d680907e61a4f74f5235c71ca2b120.jpg"
+    },
+    {
+      "name": "Rodízio de Borracha",
+      "slug": "rodizio-de-borracha",
+      "path": "public/images/products/rodizio-de-borracha.jpg",
+      "size": "26.5 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/5f1716b4ef0913cf8896840358fb8508.jpg"
+    },
+    {
+      "name": "Diagonal para Andaime",
+      "slug": "diagonal-para-andaime",
+      "path": "public/images/products/diagonal-para-andaime.jpg",
+      "size": "5.6 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/c3829c1ed63e6c538dab4b427b2b49db.jpg"
+    },
+    {
+      "name": "Escada para Andaime",
+      "slug": "escada-para-andaime",
+      "path": "public/images/products/escada-para-andaime.jpg",
+      "size": "26.4 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/d92632909c0c9e31f592899e33ea2ac9.jpg"
+    },
+    {
+      "name": "Andaime Tubular",
+      "slug": "andaime-tubular",
+      "path": "public/images/products/andaime-tubular.jpg",
+      "size": "69.3 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/79a49e4a6fe729437703cdb57d3e24be.jpg"
+    },
+    {
+      "name": "Régua Vibratória",
+      "slug": "regua-vibratoria",
+      "path": "public/images/products/regua-vibratoria.jpg",
+      "size": "11.6 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/f7ee4cd12aa7c2e5369aa1710784f705.jpg"
+    },
+    {
+      "name": "Acabadora de Superfície",
+      "slug": "acabadora-de-superficie",
+      "path": "public/images/products/acabadora-de-superficie.jpg",
+      "size": "14.8 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/f732e7d2c288ee10b34e46cd6fb1e287.jpg"
+    },
+    {
+      "name": "Placa Reversível CR5",
+      "slug": "placa-reversivel-cr5",
+      "path": "public/images/products/placa-reversivel-cr5.jpg",
+      "size": "32.8 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/4975fd33f207a39fa3816126f8662b0f.jpg"
+    },
+    {
+      "name": "Placa Vibratória PV 95",
+      "slug": "placa-vibratoria-pv-95",
+      "path": "public/images/products/placa-vibratoria-pv-95.jpg",
+      "size": "28.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/11bbd9de7432d6fbbb1011f46b82e3aa.jpg"
+    },
+    {
+      "name": "Compactador de Percussão",
+      "slug": "compactador-de-percussao",
+      "path": "public/images/products/compactador-de-percussao.jpg",
+      "size": "39.6 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/936923e90d40aaf20a6f4deed588ef8b.jpg"
+    },
+    {
+      "name": "Vibrador de Imersão de Alta Frequência",
+      "slug": "vibrador-de-imersao-de-alta-frequencia",
+      "path": "public/images/products/vibrador-de-imersao-de-alta-frequencia.jpg",
+      "size": "28.3 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/41582a5428827627776b4a6cf9a75758.jpg"
+    },
+    {
+      "name": "Mangote Vibrador de Imersão",
+      "slug": "mangote-vibrador-de-imersao",
+      "path": "public/images/products/mangote-vibrador-de-imersao.jpg",
+      "size": "32.2 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/53a2c16b6a910ae0fc6daa0a415ce8e6.jpg"
+    },
+    {
+      "name": "Motor de Acionamento Gasolina/Diesel",
+      "slug": "motor-de-acionamento-gasolina-diesel",
+      "path": "public/images/products/motor-de-acionamento-gasolina-diesel.jpg",
+      "size": "24.5 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/425c95eae1c78a8ba7db0cc91335cbb8.jpg"
+    },
+    {
+      "name": "Motor de Acionamento Elétrico",
+      "slug": "motor-de-acionamento-eletrico",
+      "path": "public/images/products/motor-de-acionamento-eletrico.jpg",
+      "size": "27.2 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/f711b5dfbfdf8a7706d2f3d368c8cf34.jpg"
+    },
+    {
+      "name": "Betoneira 400L Diesel",
+      "slug": "betoneira-400l-diesel",
+      "path": "public/images/products/betoneira-400l-diesel.jpg",
+      "size": "18.5 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/49c6036b1cf5a2ebd3fb71d8edf50bee.jpg"
+    },
+    {
+      "name": "Betoneira 400L Elétrica",
+      "slug": "betoneira-400l-eletrica",
+      "path": "public/images/products/betoneira-400l-eletrica.jpg",
+      "size": "25.7 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/d2d6fd12de8bcfae6bea960ea2b67130.jpg"
+    },
+    {
+      "name": "Compressor de Ar (Pequeno e Médio Porte)",
+      "slug": "compressor-de-ar-pequeno-e-medio-porte",
+      "path": "public/images/products/compressor-de-ar-pequeno-e-medio-porte.jpg",
+      "size": "35.0 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/3d12a9ed120f8e18200cf566e99af980.jpg"
+    },
+    {
+      "name": "Lavadora de Alta Pressão",
+      "slug": "lavadora-de-alta-pressao",
+      "path": "public/images/products/lavadora-de-alta-pressao.jpg",
+      "size": "34.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/c02b15eb4d646e5401cc6292db88dff4.jpg"
+    },
+    {
+      "name": "Motobomba",
+      "slug": "motobomba",
+      "path": "public/images/products/motobomba.jpg",
+      "size": "32.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/e27545aa6569ce4b93487af5cf31f9c0.jpg"
+    },
+    {
+      "name": "Bomba Submersível de 2\" (esgotamento)",
+      "slug": "bomba-submersivel-de-2-esgotamento",
+      "path": "public/images/products/bomba-submersivel-de-2-esgotamento.jpg",
+      "size": "34.6 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/dd0629b10c9cdd61980fc395d318f52e.jpg"
+    },
+    {
+      "name": "Bomba Submersível de 2\" (drenagem)",
+      "slug": "bomba-submersivel-de-2-drenagem",
+      "path": "public/images/products/bomba-submersivel-de-2-drenagem.jpg",
+      "size": "33.0 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/e4e1393eead0443cdda2d4f077f5519b.jpg"
+    },
+    {
+      "name": "Bomba Submersível de Mangote",
+      "slug": "bomba-submersivel-de-mangote",
+      "path": "public/images/products/bomba-submersivel-de-mangote.jpg",
+      "size": "25.6 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/1f2c6ed3375f752eb118938a5a0aff0a.jpg"
+    },
+    {
+      "name": "Gerador de Energia a Diesel",
+      "slug": "gerador-de-energia-a-diesel",
+      "path": "public/images/products/gerador-de-energia-a-diesel.jpg",
+      "size": "29.0 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/81ba540b3e311860b0ecbf68b5c9e8a9.jpg"
+    },
+    {
+      "name": "Gerador de Energia a Gasolina",
+      "slug": "gerador-de-energia-a-gasolina",
+      "path": "public/images/products/gerador-de-energia-a-gasolina.jpg",
+      "size": "33.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/834c76463737091ed918af0a8c093ffd.jpg"
+    },
+    {
+      "name": "Martelo Demolidor de 30 kg",
+      "slug": "martelo-demolidor-de-30-kg",
+      "path": "public/images/products/martelo-demolidor-de-30-kg.jpg",
+      "size": "14.8 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/6fcf94852c96b6a5a3a463ccd891f4ac.jpg"
+    },
+    {
+      "name": "Martelo Demolidor de 19 kg",
+      "slug": "martelo-demolidor-de-19-kg",
+      "path": "public/images/products/martelo-demolidor-de-19-kg.jpg",
+      "size": "11.2 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/d9b3b7c985407f2526ba6dbde5357d1c.jpg"
+    },
+    {
+      "name": "Martelo Demolidor de 15 kg",
+      "slug": "martelo-demolidor-de-15-kg",
+      "path": "public/images/products/martelo-demolidor-de-15-kg.jpg",
+      "size": "12.2 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/4e5f0d2b79a0383ae6f2d9c97e1f9d45.jpg"
+    },
+    {
+      "name": "Martelo Rompedor de 10 kg",
+      "slug": "martelo-rompedor-de-10-kg",
+      "path": "public/images/products/martelo-rompedor-de-10-kg.jpg",
+      "size": "13.3 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/8bd8060c51f3b3399103ab71b31d144d.jpg"
+    },
+    {
+      "name": "Martelo Rompedor de 5 kg",
+      "slug": "martelo-rompedor-de-5-kg",
+      "path": "public/images/products/martelo-rompedor-de-5-kg.jpg",
+      "size": "14.7 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/36596cccd9cb88e8c68fa4abf42471f0.jpg"
+    },
+    {
+      "name": "Serra p/ Piso",
+      "slug": "serra-p-piso",
+      "path": "public/images/products/serra-p-piso.jpg",
+      "size": "32.3 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/17079719a99f865718367ea8965b3899.jpg"
+    },
+    {
+      "name": "Policorte",
+      "slug": "policorte",
+      "path": "public/images/products/policorte.jpg",
+      "size": "35.6 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/38721f17a83cab8f1ef276afe87f3711.jpg"
+    },
+    {
+      "name": "Cortadora de Metais",
+      "slug": "cortadora-de-metais",
+      "path": "public/images/products/cortadora-de-metais.jpg",
+      "size": "13.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/99ca0e4def0e823ecd40926922ba2d45.jpg"
+    },
+    {
+      "name": "Serra Circular Manual de 9\"",
+      "slug": "serra-circular-manual-de-9",
+      "path": "public/images/products/serra-circular-manual-de-9.jpg",
+      "size": "21.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/287701e77efe84b9f8ccda970e86e542.jpg"
+    },
+    {
+      "name": "Serra Circular Manual de 7\"",
+      "slug": "serra-circular-manual-de-7",
+      "path": "public/images/products/serra-circular-manual-de-7.jpg",
+      "size": "20.8 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/44d4db587f425461f43ab5d8559f49c4.jpg"
+    },
+    {
+      "name": "Serra Mármore \"Makitão\"",
+      "slug": "serra-marmore-makitao",
+      "path": "public/images/products/serra-marmore-makitao.jpg",
+      "size": "20.7 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/aad5bbc65988329ed46a9548bdcdef56.jpg"
+    },
+    {
+      "name": "Serra Mármore",
+      "slug": "serra-marmore",
+      "path": "public/images/products/serra-marmore.jpg",
+      "size": "21.2 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/df9782830dadcf6e02cde7a344100fb7.jpg"
+    },
+    {
+      "name": "Finca Pinos",
+      "slug": "finca-pinos",
+      "path": "public/images/products/finca-pinos.jpg",
+      "size": "12.5 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/0db8619f1351e0b0f9a3dc8f9d5f9cec.jpg"
+    },
+    {
+      "name": "Martelete Perfurador SDS Plus",
+      "slug": "martelete-perfurador-sds-plus",
+      "path": "public/images/products/martelete-perfurador-sds-plus.jpg",
+      "size": "13.3 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/e1ffd12e0a0164a67ad46dfcfa946340.jpg"
+    },
+    {
+      "name": "Furadeira de Impacto 5/8\"",
+      "slug": "furadeira-de-impacto-5-8",
+      "path": "public/images/products/furadeira-de-impacto-5-8.jpg",
+      "size": "11.6 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/03c46de44790f47693bac868db0faa6a.jpg"
+    },
+    {
+      "name": "Furadeira de Impacto ½\"",
+      "slug": "furadeira-de-impacto-1-2",
+      "path": "public/images/products/furadeira-de-impacto-1-2.jpg",
+      "size": "7.1 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/3bbac248f34cef775506146b77690dd5.jpg"
+    },
+    {
+      "name": "Máquina de Solda de 250 amp",
+      "slug": "maquina-de-solda-de-250-amp",
+      "path": "public/images/products/maquina-de-solda-de-250-amp.jpg",
+      "size": "27.2 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/12f3f8702ed52d2df3d75c1912c5a540.jpg"
+    },
+    {
+      "name": "Transformador de Energia 110/220V",
+      "slug": "transformador-de-energia-110-220v",
+      "path": "public/images/products/transformador-de-energia-110-220v.jpg",
+      "size": "12.8 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/f78d62cc0c1d6003b0d627b30420c9b5.jpg"
+    },
+    {
+      "name": "Plaina",
+      "slug": "plaina",
+      "path": "public/images/products/plaina.jpg",
+      "size": "19.9 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/b51b3d2d44513d90da301de5c20f032e.jpg"
+    },
+    {
+      "name": "Retificadeira",
+      "slug": "retificadeira",
+      "path": "public/images/products/retificadeira.jpg",
+      "size": "11.4 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/867fea10a042b0cc30ef9db837f8f811.jpg"
+    },
+    {
+      "name": "Lixadeira Angular de 7\"",
+      "slug": "lixadeira-angular-de-7",
+      "path": "public/images/products/lixadeira-angular-de-7.jpg",
+      "size": "14.8 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/f43bd5e6479354a1967248b9182b0593.jpg"
+    },
+    {
+      "name": "Esmerilhadeira Angular de 7\"",
+      "slug": "esmerilhadeira-angular-de-7",
+      "path": "public/images/products/esmerilhadeira-angular-de-7.jpg",
+      "size": "16.0 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/1c2bcc35f3f0c28beb4257d6550c8de4.jpg"
+    },
+    {
+      "name": "Esmerilhadeira Angular de 4\"½",
+      "slug": "esmerilhadeira-angular-de-4-1-2",
+      "path": "public/images/products/esmerilhadeira-angular-de-4-1-2.jpg",
+      "size": "17.2 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/6cb83eafccec74c4e3ffab1cf1a32d42.jpg"
+    },
+    {
+      "name": "Serra de Vídea para Madeira",
+      "slug": "serra-de-videa-para-madeira",
+      "path": "public/images/products/serra-de-videa-para-madeira.jpg",
+      "size": "22.7 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/529f6c943be2a5d3a83509305f85542b.jpg"
+    },
+    {
+      "name": "Discos para Serra Mármore e Makitão",
+      "slug": "discos-para-serra-marmore-e-makitao",
+      "path": "public/images/products/discos-para-serra-marmore-e-makitao.jpg",
+      "size": "22.7 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/69ebd738907a007748a4cac7c0398f8a.jpg"
+    },
+    {
+      "name": "Discos para Serra Cliper",
+      "slug": "discos-para-serra-cliper",
+      "path": "public/images/products/discos-para-serra-cliper.jpg",
+      "size": "16.7 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/fa2011600cffce87106a80fb61672ad7.jpg"
+    },
+    {
+      "name": "Brocas SDS Plus",
+      "slug": "brocas-sds-plus",
+      "path": "public/images/products/brocas-sds-plus.jpg",
+      "size": "31.8 KB",
+      "url": "https://pilarequipamentos.com.br/imagens/equipamentos/f9075ea571d5974b14cb6dfe7ae73f2d.jpg"
+    }
+  ]
+}

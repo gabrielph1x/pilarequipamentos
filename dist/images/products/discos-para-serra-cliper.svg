@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="metalSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Studio Neutral Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Floor Reflection Line -->
+  <ellipse cx="200" cy="245" rx="140" ry="16" fill="#CBD5E1" opacity="0.6" />
+
+  <!-- Equipment Graphic Group with Shadow -->
+  <g filter="url(#shadow)">
+    
+      <!-- Discos para Serra Cliper 350mm (Heavy Segmented Asphalt/Concrete Disc) -->
+      <circle cx="200" cy="140" r="95" fill="url(#metalDark)" stroke="#1E293B" stroke-width="3" />
+      <circle cx="200" cy="140" r="75" fill="#0284C7" />
+      <!-- Deep Gullet Diamond Segments -->
+      <rect x="286" y="132" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(0 292 140)" /><rect x="280.4517211123036" y="163.46585318596152" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(20 286.4517211123036 171.46585318596152)" /><rect x="264.47608876694596" y="191.1364600911616" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(40 270.47608876694596 199.1364600911616)" /><rect x="240" y="211.67433714816835" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(60 246 219.67433714816835)" /><rect x="209.9756323453576" y="222.60231327712313" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(80 215.9756323453576 230.60231327712313)" /><rect x="178.02436765464242" y="222.60231327712313" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(100 184.02436765464242 230.60231327712313)" /><rect x="148.00000000000003" y="211.67433714816838" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(120 154.00000000000003 219.67433714816838)" /><rect x="123.52391123305404" y="191.13646009116164" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(140 129.52391123305404 199.13646009116164)" /><rect x="107.54827888769644" y="163.46585318596152" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(160 113.54827888769644 171.46585318596152)" /><rect x="102" y="132" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(180 108 140)" /><rect x="107.54827888769643" y="100.53414681403848" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(200 113.54827888769643 108.53414681403848)" /><rect x="123.52391123305401" y="72.86353990883839" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(220 129.523911233054 80.86353990883839)" /><rect x="147.99999999999994" y="52.325662851831666" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(240 153.99999999999994 60.325662851831666)" /><rect x="178.02436765464242" y="41.397686722876855" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(260 184.02436765464242 49.397686722876855)" /><rect x="209.97563234535755" y="41.397686722876855" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(280 215.97563234535755 49.397686722876855)" /><rect x="240" y="52.32566285183165" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(300 246 60.32566285183165)" /><rect x="264.47608876694596" y="72.86353990883836" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(320 270.47608876694596 80.86353990883836)" /><rect x="280.4517211123036" y="100.5341468140385" width="12" height="16" rx="2" fill="#D97706" stroke="#78350F" stroke-width="1.5" transform="rotate(340 286.4517211123036 108.5341468140385)" />
+      <circle cx="200" cy="140" r="25" fill="#0F172A" />
+      <circle cx="200" cy="140" r="14" fill="#94A3B8" />
+      <text x="200" y="144" font-family="sans-serif" font-size="10" font-weight="900" fill="#FFFFFF" text-anchor="middle">CLIPPER 350mm</text>
+    
+  </g>
+
+  <!-- Top Brand Header Bar -->
+  <rect x="0" y="0" width="400" height="32" fill="#332929" />
+  <text x="16" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" letter-spacing="1">PILAR EQUIPAMENTOS</text>
+  <text x="384" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="end">ACESSÓRIOS</text>
+
+  <!-- Bottom Equipment Title Overlay -->
+  <rect x="0" y="260" width="400" height="40" fill="#332929" />
+  <text x="200" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">DISCOS PARA SERRA CLIPER</text>
+</svg>

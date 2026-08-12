@@ -210,7 +210,7 @@ export default function Orcamento() {
             </div>
             <div>
               <Link
-                to="/categoria/andaimes-elevacao"
+                to="/categoria/acessorios"
                 className="inline-flex items-center gap-2 bg-pilar-red hover:bg-pilar-terracotta text-white px-8 py-3.5 rounded-xl font-bold text-sm shadow-glow-red transition-all min-h-[44px]"
               >
                 <span>Explorar Catálogo de Equipamentos</span>

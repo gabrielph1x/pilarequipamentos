@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="metalSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Studio Neutral Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Floor Reflection Line -->
+  <ellipse cx="200" cy="245" rx="140" ry="16" fill="#CBD5E1" opacity="0.6" />
+
+  <!-- Equipment Graphic Group with Shadow -->
+  <g filter="url(#shadow)">
+    
+      <!-- Esmerilhadeira Angular de 4"½ (Compact 4.5" 115mm Grinder: slim body + slide switch + 115mm guard) -->
+      <!-- Compact Slim Barrel Body (Makita Teal style) -->
+      <rect x="110" y="120" width="120" height="32" rx="16" fill="#0D9488" stroke="#0F766E" stroke-width="2" />
+      <!-- Slide Switch on Top Body -->
+      <rect x="140" y="115" width="20" height="8" rx="2" fill="#F59E0B" />
+      <!-- Metal Gear Case -->
+      <path d="M230 115 L265 115 L270 155 L230 155 Z" fill="#475569" />
+      <!-- Compact 115mm (4.5") Guard & Disc -->
+      <ellipse cx="270" cy="165" rx="35" ry="10" fill="#0F172A" stroke="#DC2626" stroke-width="3" />
+      <ellipse cx="270" cy="165" rx="14" ry="4" fill="#F59E0B" />
+      <text x="170" y="140" font-family="sans-serif" font-size="9" font-weight="900" fill="#FFFFFF" text-anchor="middle">4.1/2" (115mm)</text>
+    
+  </g>
+
+  <!-- Top Brand Header Bar -->
+  <rect x="0" y="0" width="400" height="32" fill="#332929" />
+  <text x="16" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" letter-spacing="1">PILAR EQUIPAMENTOS</text>
+  <text x="384" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="end">FERRAMENTAS ELÉTRICAS</text>
+
+  <!-- Bottom Equipment Title Overlay -->
+  <rect x="0" y="260" width="400" height="40" fill="#332929" />
+  <text x="200" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">ESMERILHADEIRA ANGULAR DE 4"½</text>
+</svg>

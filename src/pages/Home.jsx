@@ -33,8 +33,8 @@ export default function Home() {
     }
   }, [location]);
 
-  // Equipamentos em Destaque
-  const featuredProducts = PRODUCTS;
+  // Equipamentos em Destaque (Filtra itens marcados como destaques)
+  const featuredProducts = PRODUCTS.filter((p) => p.featured);
 
   const differentials = [
     {
@@ -313,7 +313,7 @@ export default function Home() {
           <ScrollReveal direction="up" delay={150}>
             <div className="text-center pt-4">
               <Link
-                to="/categoria/andaimes-elevacao"
+                to="/categoria/acessorios"
                 className="inline-flex items-center justify-center gap-2 bg-pilar-red hover:bg-pilar-terracotta text-white px-6 sm:px-8 py-3.5 rounded-xl font-bold text-xs sm:text-sm shadow-glow-red transition-all min-h-[44px] w-full sm:w-auto"
               >
                 <span>Ver todo o catálogo ({PRODUCTS.length} itens)</span>

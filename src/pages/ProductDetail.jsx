@@ -51,7 +51,7 @@ export default function ProductDetail() {
     `Olá! Gostaria de solicitar um orçamento para o equipamento: ${product.name} (Categoria: ${product.categoryName}).`
   );
 
-  const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'%3E%3Crect width='600' height='450' fill='%3C332929'/%3E%3Cpath d='M250 150 H350 V190 H310 V290 H290 V190 H250 Z' fill='%23B72527'/%3E%3Ctext x='300' y='340' font-family='sans-serif' font-size='20' fill='%23FFFFFF' text-anchor='middle'%3EPILAR EQUIPAMENTOS%3C/text%3E%3C/svg%3E";
+  const fallbackSrc = `/images/products/${product.slug}.svg`;
 
   return (
     <div className="bg-pilar-bg space-y-12 pb-12">

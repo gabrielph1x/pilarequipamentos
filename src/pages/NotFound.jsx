@@ -26,7 +26,7 @@ export default function NotFound() {
             <span>Voltar para a Home</span>
           </Link>
           <Link
-            to="/categoria/andaimes-elevacao"
+            to="/categoria/acessorios"
             className="bg-slate-100 text-pilar-charcoal px-5 py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2"
           >
             <Search className="w-4 h-4 text-pilar-terracotta" />

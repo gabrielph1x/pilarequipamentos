@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="metalSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Studio Neutral Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Floor Reflection Line -->
+  <ellipse cx="200" cy="245" rx="140" ry="16" fill="#CBD5E1" opacity="0.6" />
+
+  <!-- Equipment Graphic Group with Shadow -->
+  <g filter="url(#shadow)">
+    
+      <!-- Escada para Andaime (Access ladder with hooks for scaffold rungs) -->
+      <!-- Side Rails -->
+      <rect x="150" y="30" width="12" height="200" fill="#334155" />
+      <rect x="230" y="30" width="12" height="200" fill="#334155" />
+      <!-- Top Attachment Hooks -->
+      <path d="M150 40 Q130 20 150 10 M230 40 Q210 20 230 10" fill="none" stroke="#DC2626" stroke-width="8" stroke-linecap="round" />
+      <!-- Rungs -->
+      <line x1="156" y1="60" x2="236" y2="60" stroke="#94A3B8" stroke-width="6" />
+      <line x1="156" y1="100" x2="236" y2="100" stroke="#94A3B8" stroke-width="6" />
+      <line x1="156" y1="140" x2="236" y2="140" stroke="#94A3B8" stroke-width="6" />
+      <line x1="156" y1="180" x2="236" y2="180" stroke="#94A3B8" stroke-width="6" />
+    
+  </g>
+
+  <!-- Top Brand Header Bar -->
+  <rect x="0" y="0" width="400" height="32" fill="#332929" />
+  <text x="16" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" letter-spacing="1">PILAR EQUIPAMENTOS</text>
+  <text x="384" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="end">ANDAIMES / ELEVAÇÃO</text>
+
+  <!-- Bottom Equipment Title Overlay -->
+  <rect x="0" y="260" width="400" height="40" fill="#332929" />
+  <text x="200" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">ESCADA PARA ANDAIME</text>
+</svg>

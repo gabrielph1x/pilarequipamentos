@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="metalSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Studio Neutral Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Floor Reflection Line -->
+  <ellipse cx="200" cy="245" rx="140" ry="16" fill="#CBD5E1" opacity="0.6" />
+
+  <!-- Equipment Graphic Group with Shadow -->
+  <g filter="url(#shadow)">
+    
+      <!-- Motor de Acionamento Gasolina/Diesel (Stationary Honda/Branco 4T engine on swivel base) -->
+      <!-- Swivel Base Frame -->
+      <rect x="130" y="175" width="140" height="20" rx="4" fill="#334155" />
+      <circle cx="200" cy="185" r="8" fill="#F59E0B" />
+      <!-- Engine Block (Honda Red/White style) -->
+      <rect x="140" y="80" width="120" height="95" rx="10" fill="#DC2626" stroke="#991B1B" stroke-width="2" />
+      <!-- Recoil Starter Hub -->
+      <circle cx="200" cy="125" r="28" fill="#1E293B" />
+      <circle cx="200" cy="125" r="14" fill="#94A3B8" />
+      <!-- Front Quick Socket for Hose Coupling -->
+      <rect x="260" y="115" width="25" height="22" rx="4" fill="#F59E0B" />
+    
+  </g>
+
+  <!-- Top Brand Header Bar -->
+  <rect x="0" y="0" width="400" height="32" fill="#332929" />
+  <text x="16" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" letter-spacing="1">PILAR EQUIPAMENTOS</text>
+  <text x="384" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="end">CONCRETAGEM E COMPACTAÇÃO</text>
+
+  <!-- Bottom Equipment Title Overlay -->
+  <rect x="0" y="260" width="400" height="40" fill="#332929" />
+  <text x="200" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">MOTOR DE ACIONAMENTO GASOLINA/DIESEL</text>
+</svg>

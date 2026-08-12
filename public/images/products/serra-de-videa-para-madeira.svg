@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="metalSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Studio Neutral Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Floor Reflection Line -->
+  <ellipse cx="200" cy="245" rx="140" ry="16" fill="#CBD5E1" opacity="0.6" />
+
+  <!-- Equipment Graphic Group with Shadow -->
+  <g filter="url(#shadow)">
+    
+      <!-- Serra de Vídea para Madeira (Blade 235mm with carbide teeth) -->
+      <circle cx="200" cy="140" r="85" fill="url(#metalSteel)" stroke="#334155" stroke-width="3" />
+      <circle cx="200" cy="140" r="72" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="14 6" />
+      <circle cx="200" cy="140" r="28" fill="#1E293B" />
+      <circle cx="200" cy="140" r="16" fill="#CBD5E1" stroke="#475569" stroke-width="2" />
+      <!-- Expansion slots -->
+      <path d="M200 68 L200 80 M272 140 L260 140 M200 212 L200 200 M128 140 L140 140" stroke="#0F172A" stroke-width="3" stroke-linecap="round" />
+      <!-- Carbide Vídea Tips (Gold/Silver welded tips) -->
+      <rect x="281" y="136" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(0 285 140)" /><rect x="278.1036952345708" y="157.99961883371427" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(15 282.1036952345708 161.99961883371427)" /><rect x="269.61215932167727" y="178.5" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(30 273.61215932167727 182.5)" /><rect x="256.10407640085657" y="196.10407640085654" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(45 260.10407640085657 200.10407640085654)" /><rect x="238.5" y="209.61215932167727" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(60 242.5 213.61215932167727)" /><rect x="217.99961883371427" y="218.1036952345708" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(75 221.99961883371427 222.1036952345708)" /><rect x="196" y="221" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(90 200 225)" /><rect x="174.00038116628573" y="218.1036952345708" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(105 178.00038116628573 222.1036952345708)" /><rect x="153.50000000000003" y="209.6121593216773" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(120 157.50000000000003 213.6121593216773)" /><rect x="135.89592359914346" y="196.10407640085654" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(135 139.89592359914346 200.10407640085654)" /><rect x="122.3878406783227" y="178.5" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(150 126.3878406783227 182.5)" /><rect x="113.8963047654292" y="157.9996188337143" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(165 117.8963047654292 161.9996188337143)" /><rect x="111" y="136" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(180 115 140)" /><rect x="113.89630476542918" y="114.00038116628576" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(195 117.89630476542918 118.00038116628576)" /><rect x="122.38784067832272" y="93.5" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(210 126.38784067832272 97.5)" /><rect x="135.89592359914343" y="75.89592359914346" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(225 139.89592359914343 79.89592359914346)" /><rect x="153.49999999999997" y="62.38784067832273" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(240 157.49999999999997 66.38784067832273)" /><rect x="174.00038116628573" y="53.89630476542919" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(255 178.00038116628573 57.89630476542919)" /><rect x="195.99999999999997" y="51" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(270 199.99999999999997 55)" /><rect x="217.9996188337143" y="53.89630476542921" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(285 221.9996188337143 57.89630476542921)" /><rect x="238.5" y="62.38784067832272" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(300 242.5 66.38784067832272)" /><rect x="256.1040764008565" y="75.89592359914344" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(315 260.1040764008565 79.89592359914344)" /><rect x="269.61215932167727" y="93.49999999999997" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(330 273.61215932167727 97.49999999999997)" /><rect x="278.1036952345708" y="114.00038116628573" width="8" height="8" rx="1.5" fill="#F59E0B" stroke="#B45309" stroke-width="1" transform="rotate(345 282.1036952345708 118.00038116628573)" />
+      <text x="200" y="144" font-family="sans-serif" font-size="10" font-weight="900" fill="#94A3B8" text-anchor="middle">WOOD TCT</text>
+    
+  </g>
+
+  <!-- Top Brand Header Bar -->
+  <rect x="0" y="0" width="400" height="32" fill="#332929" />
+  <text x="16" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" letter-spacing="1">PILAR EQUIPAMENTOS</text>
+  <text x="384" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="end">ACESSÓRIOS</text>
+
+  <!-- Bottom Equipment Title Overlay -->
+  <rect x="0" y="260" width="400" height="40" fill="#332929" />
+  <text x="200" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">SERRA DE VÍDEA PARA MADEIRA</text>
+</svg>

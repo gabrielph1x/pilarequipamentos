@@ -115,7 +115,8 @@ export default function Header() {
     if (searchQuery.trim()) {
       setShowSearchResults(false);
       setMobileMenuOpen(false);
-      navigate(`/categoria/andaimes-elevacao?search=${encodeURIComponent(searchQuery)}`);
+      const targetCat = searchResults.length > 0 ? searchResults[0].categorySlug : 'acessorios';
+      navigate(`/categoria/${targetCat}?search=${encodeURIComponent(searchQuery)}`);
     }
   };
 

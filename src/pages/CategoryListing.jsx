@@ -17,7 +17,7 @@ export default function CategoryListing() {
 
   // Encontra a categoria correspondente ou fallback
   const currentCategory = useMemo(() => {
-    return CATEGORIES.find((c) => c.slug === slug) || CATEGORIES[1];
+    return CATEGORIES.find((c) => c.slug === slug) || CATEGORIES[0];
   }, [slug]);
 
   // Filtra produtos pertencentes a esta categoria + busca interna por nome
