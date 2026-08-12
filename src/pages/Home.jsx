@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   ShieldCheck, 
@@ -19,16 +19,9 @@ import { useQuote } from '../context/QuoteContext';
 
 export default function Home() {
   const { getWhatsAppQuoteUrl } = useQuote();
-  const [filterSearch, setFilterSearch] = useState('');
 
   // Equipamentos em Destaque
-  const featuredProducts = PRODUCTS.filter((p) => {
-    const matchesSearch = filterSearch
-      ? p.name.toLowerCase().includes(filterSearch.toLowerCase()) ||
-        p.categoryName.toLowerCase().includes(filterSearch.toLowerCase())
-      : true;
-    return matchesSearch;
-  });
+  const featuredProducts = PRODUCTS;
 
   return (
     <div className="space-y-0 w-full overflow-x-hidden">
@@ -132,11 +125,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. NAVBAR SECUNDÁRIA DE CATEGORIAS + BUSCA AO SCROLL (Requirement #4) */}
-      <CategoryNavScroll
-        onSearchChange={setFilterSearch}
-        searchValue={filterSearch}
-      />
+      {/* 2. NAVBAR SECUNDÁRIA DE CATEGORIAS AO SCROLL */}
+      <CategoryNavScroll />
 
       {/* 3. SEÇÃO "CONHEÇA A PILAR" (RESUMO INSTITUCIONAL - Requirement #4) */}
       <section className="py-12 sm:py-16 px-4 bg-white border-b border-pilar-border w-full">
