@@ -106,7 +106,7 @@ export default function CategoryNavScroll({ activeSlug }) {
   };
 
   return (
-    <section id="categorias-quick-access" className="bg-[#332929] border-y border-pilar-wine py-2.5 sm:py-3.5 px-3 sm:px-4 relative z-30 shadow-pilar-md w-full select-none">
+    <section id="categorias-quick-access" className="bg-[#332929] border-b border-white/10 py-2.5 sm:py-3.5 px-3 sm:px-4 relative z-30 shadow-pilar-md w-full select-none">
       <div className="max-w-7xl mx-auto relative flex items-center">
         
         {/* Botão de Navegação Esquerda (Mobile/Tablet apenas - OCULTO no Desktop lg:) */}

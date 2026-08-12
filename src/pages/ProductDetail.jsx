@@ -56,6 +56,7 @@ export default function ProductDetail() {
       {/* Container Principal */}
       <div className="max-w-7xl mx-auto px-4 pt-6 space-y-8">
         <Breadcrumb
+          variant="light"
           items={[
             { label: product.categoryName, url: `/categoria/${product.categorySlug}` },
             { label: product.name }
