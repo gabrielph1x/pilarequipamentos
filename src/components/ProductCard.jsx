@@ -48,14 +48,18 @@ export default function ProductCard({ product }) {
           loading="lazy"
         />
 
-        {/* Tag / Badge no topo do card */}
+        {/* Badge Vermelha de Destaque no Canto Superior Esquerdo */}
         {product.tag && (
-          <span className="absolute top-3 left-3 bg-pilar-red text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md tracking-wider">
+          <span className="absolute top-3 left-3 z-10 bg-pilar-red text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md tracking-wider leading-tight max-w-[80%] pointer-events-none">
             {product.tag}
           </span>
         )}
 
-        <span className="absolute top-3 right-3 bg-pilar-charcoal/80 backdrop-blur-sm text-slate-200 text-[10px] font-semibold px-2 py-0.5 rounded border border-slate-600">
+        {/* Badge Cinza da Categoria no Canto Inferior Direito */}
+        <span 
+          className="absolute bottom-3 right-3 z-10 bg-pilar-charcoal/80 backdrop-blur-sm text-slate-200 text-[10px] font-semibold px-2 py-0.5 rounded border border-slate-600 max-w-[85%] truncate pointer-events-none shadow-sm"
+          title={product.categoryName}
+        >
           {product.categoryName}
         </span>
       </div>
