@@ -42,6 +42,9 @@ Cada página do site foi planejada de acordo com as melhores práticas de navega
 
 ### a) Página Home (Inicial)
 
+![Página Home do site Pilar Equipamentos](./docs/readme-assets/01-home.png)
+*Banner principal, categorias em destaque e diferenciais da Pilar Equipamentos.*
+
 A **Página Home** funciona como o cartão de visitas da empresa, projetada para prender a atenção do cliente logo nos primeiros segundos e guiá-lo para a ação desejada.
 
 ```
@@ -88,6 +91,9 @@ A **Página Home** funciona como o cartão de visitas da empresa, projetada para
 
 ### b) Página Empresa (Sobre Nós)
 
+![Página Empresa do site Pilar Equipamentos](./docs/readme-assets/02-empresa.png)
+*Apresentação institucional da Pilar Equipamentos, história de 35+ anos e diferenciais de locação.*
+
 Página inteiramente focada em transmitir **confiança, segurança jurídica e solidez corporativa** para o cliente que está avaliando alugar equipamentos.
 
 * **Banner Institucional:** Destaque para a trajetória da Pilar desde 1985.
@@ -111,6 +117,9 @@ Página inteiramente focada em transmitir **confiança, segurança jurídica e s
 
 ### c) Página de Categoria do Catálogo
 
+![Página de Categoria - Ferramentas Elétricas](./docs/readme-assets/03-categoria-ferramentas-eletricas.png)
+*Vitrine da categoria Ferramentas Elétricas com busca inteligente, filtros de ordenação e cards de equipamentos.*
+
 A página de categoria (exemplo: *Ferramentas Elétricas*, *Concretagem e Compactação* ou *Furação / Corte / Demolição*) organiza os produtos em uma vitrine limpa e fácil de navegar.
 
 #### Recursos da Página de Categoria:
@@ -127,6 +136,9 @@ A página de categoria (exemplo: *Ferramentas Elétricas*, *Concretagem e Compac
 ---
 
 ### d) Página de Detalhe de Produto (Especificação Completa)
+
+![Página de Detalhe de Produto - Martelo Demolidor de 30 kg](./docs/readme-assets/04-produto-detalhe.png)
+*Especificação completa do Martelo Demolidor de 30 kg, ficha técnica e botões de cotação e WhatsApp.*
 
 > 🌟 **Esta é a página mais detalhada de todo o site**, projetada para que o cliente tire todas as dúvidas técnicas antes de decidir a locação.
 
@@ -178,6 +190,9 @@ A página de categoria (exemplo: *Ferramentas Elétricas*, *Concretagem e Compac
 
 ### e) Página Meu Orçamento (Carrinho de Cotação)
 
+![Página Meu Orçamento do site Pilar Equipamentos](./docs/readme-assets/05-meu-orcamento.png)
+*Carrinho de orçamento com equipamentos selecionados, controle de quantidades e botão de finalização via WhatsApp.*
+
 Diferente de e-commerces tradicionais que exigem cadastros longos, senhas ou cartão de crédito, a página **Meu Orçamento** foi desenvolvida para **gerar leads imediatos de locação**.
 
 #### Como Funciona o Orçamento:
@@ -209,6 +224,9 @@ Por favor, me informe sobre valores, prazos de entrega e disponibilidade. Obriga
 ---
 
 ### f) Página Contato & Unidades Físicas
+
+![Página de Contato e Unidades Físicas](./docs/readme-assets/06-contato.png)
+*Informações de contato e mapas interativos das unidades de Belo Horizonte e Conceição do Mato Dentro.*
 
 A página de contato consolida o atendimento da empresa nas suas regiões de atuação.
 
