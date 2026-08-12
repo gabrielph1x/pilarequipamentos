@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { Search, Layers, SlidersHorizontal } from 'lucide-react';
-import { CATEGORIES, PRODUCTS } from '../data/catalog';
+import { CATEGORIES, PRODUCTS, categoriaBackgrounds } from '../data/catalog';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductCard from '../components/ProductCard';
 import CategoryNavScroll from '../components/CategoryNavScroll';
@@ -19,6 +19,10 @@ export default function CategoryListing() {
   const currentCategory = useMemo(() => {
     return CATEGORIES.find((c) => c.slug === slug) || CATEGORIES[0];
   }, [slug]);
+
+  // Imagem de fundo da categoria atual a partir do mapeamento categoriaBackgrounds
+  const slugAtual = slug || currentCategory.slug;
+  const bgImage = categoriaBackgrounds[slugAtual] || categoriaBackgrounds[currentCategory.slug] || currentCategory.bannerImage;
 
   // Filtra produtos pertencentes a esta categoria + busca interna por nome
   const filteredProducts = useMemo(() => {
@@ -38,12 +42,19 @@ export default function CategoryListing() {
 
   return (
     <div className="bg-pilar-bg pb-12 w-full overflow-x-hidden">
-      {/* Category Banner Header */}
+      {/* Category Banner Header com background dinâmico por categoria */}
       <section className="bg-[#332929] text-white relative py-8 sm:py-12 px-4 border-b border-pilar-wine overflow-hidden w-full">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-25"
-          style={{ backgroundImage: `url('${currentCategory.bannerImage}')` }}
+          className="absolute inset-0 bg-cover bg-center opacity-35"
+          style={{
+            backgroundImage: `url('${bgImage}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
         />
+        {/* Overlay escurecido com tom avermelhado para contraste com o título e breadcrumb */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2a1f1f]/90 via-[#332929]/80 to-[#422222]/70 pointer-events-none" />
+
         <div className="relative z-10 max-w-7xl mx-auto space-y-2.5">
           <Breadcrumb items={[{ label: currentCategory.title }]} />
           <ScrollReveal direction="up" duration={600}>

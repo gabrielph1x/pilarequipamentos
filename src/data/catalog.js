@@ -3,6 +3,17 @@
  * Mapeamento 100% atualizado com 6 categorias oficiais e 56 produtos técnicos.
  */
 
+export const categoriaBackgrounds = {
+  "ferramentas-eletricas": "/images/categorias/ferramentaeletricapilar.webp",
+  "andaimes-elevacao": "/images/categorias/andaimepilar.webp",
+  "concretagem-compactacao": "/images/categorias/concretagempilar.webp",
+  "corte-demolicao": "/images/categorias/cortedemolicaopilar.webp",
+  "furacao-corte-demolicao": "/images/categorias/cortedemolicaopilar.webp",
+  "geradores-bombas": "/images/categorias/geradorespilar.webp",
+  "geradores-bombas-compressores": "/images/categorias/geradorespilar.webp",
+  "acessorios": "/images/categorias/acessoriospilar.webp",
+};
+
 export const CATEGORIES = [
   {
     id: "acessorios",
@@ -11,7 +22,7 @@ export const CATEGORIES = [
     shortTitle: "Acessórios",
     iconName: "Wrench",
     description: "Lâminas, discos diamantados, brocas de alto rendimento e complementos de segurança para a sua obra.",
-    bannerImage: "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=1200&q=80"
+    bannerImage: categoriaBackgrounds["acessorios"]
   },
   {
     id: "andaimes-elevacao",
@@ -20,7 +31,7 @@ export const CATEGORIES = [
     shortTitle: "Andaimes & Elevação",
     iconName: "Layers",
     description: "Guinchos de coluna, escadas extensivas e tipo pintor, talhas manuais de corrente, pisos metálicos, guarda-corpos, sapatas ajustáveis, rodízios, diagonais e andaimes tubulares.",
-    bannerImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+    bannerImage: categoriaBackgrounds["andaimes-elevacao"]
   },
   {
     id: "concretagem-compactacao",
@@ -29,7 +40,7 @@ export const CATEGORIES = [
     shortTitle: "Concretagem & Compactação",
     iconName: "Maximize2",
     description: "Réguas vibratórias, acabadoras de superfície, placas reversíveis e vibratórias, compactadores de percussão, vibradores de imersão, mangotes, motores de acionamento e betoneiras 400L.",
-    bannerImage: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80"
+    bannerImage: categoriaBackgrounds["concretagem-compactacao"]
   },
   {
     id: "ferramentas-eletricas",
@@ -38,7 +49,7 @@ export const CATEGORIES = [
     shortTitle: "Ferramentas Elétricas",
     iconName: "Zap",
     description: "Máquinas de solda inversora 250A, autotransformadores de energia 110/220V, plainas elétricas, retificadeiras, lixadeiras angulares e esmerilhadeiras de 7\" e 4.1/2\".",
-    bannerImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
+    bannerImage: categoriaBackgrounds["ferramentas-eletricas"]
   },
   {
     id: "furacao-corte-demolicao",
@@ -47,7 +58,7 @@ export const CATEGORIES = [
     shortTitle: "Corte & Demolição",
     iconName: "Hammer",
     description: "Martelos demolidores de 30kg, 19kg e 15kg, martelos rompedores de 10kg e 5kg, serras para piso, policortes, cortadoras de metais, serras circulares, serras mármore, finca pinos, marteletes SDS e furadeiras de impacto.",
-    bannerImage: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1200&q=80"
+    bannerImage: categoriaBackgrounds["furacao-corte-demolicao"]
   },
   {
     id: "geradores-bombas-compressores",
@@ -56,7 +67,7 @@ export const CATEGORIES = [
     shortTitle: "Geradores & Bombas",
     iconName: "Cpu",
     description: "Compressores de ar, lavadoras de alta pressão, motobombas a combustão, bombas submersíveis de 2\" para esgotamento e drenagem, bombas de mangote e geradores a diesel e gasolina.",
-    bannerImage: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80"
+    bannerImage: categoriaBackgrounds["geradores-bombas-compressores"]
   }
 ];
 
