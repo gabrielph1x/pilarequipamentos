@@ -78,11 +78,25 @@ export function QuoteProvider({ children }) {
   const totalItemsCount = quoteItems.reduce((acc, item) => acc + item.quantity, 0);
 
   /**
-   * Gera o link do WhatsApp formatado dinamicamente com a lista de itens
-   * do carrinho de orçamento para conversão sem fricção.
+   * 1. URL do WhatsApp para Atendimento Genérico / Institucional.
+   * Totalmente ISOLADA do estado do carrinho/orçamento.
+   * NUNCA inclui lista de produtos do carrinho.
+   */
+  const getWhatsAppGeneralUrl = (whatsappNumber = DEFAULT_WHATSAPP_NUMBER, customText = null) => {
+    const targetNumber = whatsappNumber || DEFAULT_WHATSAPP_NUMBER;
+    const cleanNumber = targetNumber.replace(/\D/g, '');
+    const message = customText || "Olá! Gostaria de falar com um consultor da Pilar Equipamentos sobre locação de equipamentos.";
+    return `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
+  };
+
+  /**
+   * 2. URL do WhatsApp EXCLUSIVA para a página de Orçamento (Orcamento.jsx).
+   * Formatada dinamicamente com a lista de itens do carrinho.
    */
   const getWhatsAppQuoteUrl = (whatsappNumber = DEFAULT_WHATSAPP_NUMBER) => {
-    const cleanNumber = whatsappNumber.replace(/\D/g, '');
+    const targetNumber = whatsappNumber || DEFAULT_WHATSAPP_NUMBER;
+    const cleanNumber = targetNumber.replace(/\D/g, '');
+
     if (quoteItems.length === 0) {
       const defaultText = encodeURIComponent(
         "Olá! Gostaria de falar com um consultor da Pilar Equipamentos sobre locação de equipamentos."
@@ -113,6 +127,7 @@ export function QuoteProvider({ children }) {
         clearQuote,
         isInQuote,
         totalItemsCount,
+        getWhatsAppGeneralUrl,
         getWhatsAppQuoteUrl,
         toast,
         showToastNotification

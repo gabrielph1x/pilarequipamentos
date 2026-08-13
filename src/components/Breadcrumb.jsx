@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Home } from 'lucide-react';
 
-export default function Breadcrumb({ items = [], variant = 'dark', className = '' }) {
-  const isDark = variant === 'dark';
+export default function Breadcrumb({ items = [], variant = 'dark', isDark: isDarkProp, className = '' }) {
+  const isDark = isDarkProp !== undefined ? isDarkProp : variant === 'dark';
   const textShadowStyle = isDark ? { textShadow: '0 1px 3px rgba(0, 0, 0, 0.7)' } : {};
 
   return (

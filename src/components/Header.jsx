@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { 
   Search, 
@@ -34,8 +34,64 @@ export default function Header() {
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [categoriesDropdownOpen, setCategoriesDropdownOpen] = useState(false);
+  const [categoriesDropdownMounted, setCategoriesDropdownMounted] = useState(false);
+  const closeTimeoutRef = useRef(null);
+  const unmountTimeoutRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
+
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+      if (unmountTimeoutRef.current) clearTimeout(unmountTimeoutRef.current);
+    };
+  }, []);
+
+  const handleMouseEnterCategories = () => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    if (unmountTimeoutRef.current) clearTimeout(unmountTimeoutRef.current);
+    
+    setCategoriesDropdownMounted(true);
+    requestAnimationFrame(() => {
+      setCategoriesDropdownOpen(true);
+    });
+  };
+
+  const handleMouseLeaveCategories = () => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    if (unmountTimeoutRef.current) clearTimeout(unmountTimeoutRef.current);
+
+    // 130ms de tolerância para iniciar o fechamento ao sair com o mouse
+    closeTimeoutRef.current = setTimeout(() => {
+      setCategoriesDropdownOpen(false);
+      // Aguardar 150ms da animação de saída (fade + translateY + scale) antes de remover do DOM
+      unmountTimeoutRef.current = setTimeout(() => {
+        setCategoriesDropdownMounted(false);
+      }, 150);
+    }, 130);
+  };
+
+  const closeDropdownImmediately = () => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    if (unmountTimeoutRef.current) clearTimeout(unmountTimeoutRef.current);
+    setCategoriesDropdownOpen(false);
+    setCategoriesDropdownMounted(false);
+  };
+
+  const handleCategoriesClick = (e) => {
+    e.preventDefault();
+    closeDropdownImmediately();
+    setMobileMenuOpen(false);
+
+    if (location.pathname === '/') {
+      const el = document.getElementById('secao-categorias');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/', { state: { scrollTo: 'secao-categorias' } });
+    }
+  };
 
   const handleSearchChange = (e) => {
     const query = e.target.value;
@@ -59,7 +115,8 @@ export default function Header() {
     if (searchQuery.trim()) {
       setShowSearchResults(false);
       setMobileMenuOpen(false);
-      navigate(`/categoria/andaimes-elevacao?search=${encodeURIComponent(searchQuery)}`);
+      const targetCat = searchResults.length > 0 ? searchResults[0].categorySlug : 'acessorios';
+      navigate(`/categoria/${targetCat}?search=${encodeURIComponent(searchQuery)}`);
     }
   };
 
@@ -179,10 +236,14 @@ export default function Header() {
           </Link>
 
           {/* Categorias Dropdown */}
-          <div className="relative" onMouseLeave={() => setCategoriesDropdownOpen(false)}>
+          <div 
+            className="relative" 
+            onMouseEnter={handleMouseEnterCategories}
+            onMouseLeave={handleMouseLeaveCategories}
+          >
             <button
-              onClick={() => setCategoriesDropdownOpen(!categoriesDropdownOpen)}
-              onMouseEnter={() => setCategoriesDropdownOpen(true)}
+              type="button"
+              onClick={handleCategoriesClick}
               className={`px-3 py-2 rounded-lg transition-colors flex items-center gap-1 ${
                 location.pathname.startsWith('/categoria')
                   ? 'bg-pilar-red text-white font-semibold'
@@ -193,23 +254,31 @@ export default function Header() {
               <ChevronDown className="w-4 h-4 text-slate-400" />
             </button>
 
-            {categoriesDropdownOpen && (
-              <div className="absolute left-0 top-full mt-1 w-64 bg-[#332929] border border-pilar-terracotta rounded-xl shadow-pilar-lg overflow-hidden z-50 animate-badge-pop">
-                <div className="py-2">
-                  {CATEGORIES.map((cat) => {
-                    const IconComp = categoryIconMap[cat.iconName] || Layers;
-                    return (
-                      <Link
-                        key={cat.id}
-                        to={`/categoria/${cat.slug}`}
-                        onClick={() => setCategoriesDropdownOpen(false)}
-                        className="flex items-center gap-3 px-4 py-2.5 hover:bg-[#523132] text-slate-200 hover:text-white text-sm transition-colors"
-                      >
-                        <IconComp className="w-4 h-4 text-pilar-red shrink-0" />
-                        <span>{cat.title}</span>
-                      </Link>
-                    );
-                  })}
+            {categoriesDropdownMounted && (
+              <div className="absolute left-0 top-full pt-1 w-64 z-50">
+                <div 
+                  className={`bg-[#332929] border border-pilar-terracotta rounded-xl shadow-pilar-lg overflow-hidden transition-all duration-150 transform ${
+                    categoriesDropdownOpen 
+                      ? 'opacity-100 translate-y-0 scale-100 ease-out' 
+                      : 'opacity-0 -translate-y-2 scale-95 ease-in pointer-events-none'
+                  }`}
+                >
+                  <div className="py-2">
+                    {CATEGORIES.map((cat) => {
+                      const IconComp = categoryIconMap[cat.iconName] || Layers;
+                      return (
+                        <Link
+                          key={cat.id}
+                          to={`/categoria/${cat.slug}`}
+                          onClick={closeDropdownImmediately}
+                          className="flex items-center gap-3 px-4 py-2.5 hover:bg-[#523132] text-slate-200 hover:text-white text-sm transition-colors"
+                        >
+                          <IconComp className="w-4 h-4 text-pilar-red shrink-0" />
+                          <span>{cat.title}</span>
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             )}
@@ -296,9 +365,14 @@ export default function Header() {
               Empresa (Sobre a Pilar)
             </Link>
 
-            <div className="pt-2 pb-1 text-xs font-bold text-pilar-terracotta uppercase tracking-wider px-4">
-              Categorias do Catálogo
-            </div>
+            <button
+              type="button"
+              onClick={handleCategoriesClick}
+              className="pt-2 pb-1 text-xs font-bold text-pilar-terracotta hover:text-white uppercase tracking-wider px-4 text-left flex items-center justify-between transition-colors cursor-pointer"
+            >
+              <span>Categorias do Catálogo</span>
+              <span className="text-[10px] text-pilar-red font-semibold lowercase underline">ver todas</span>
+            </button>
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat.id}
