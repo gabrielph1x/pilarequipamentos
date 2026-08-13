@@ -92,12 +92,15 @@ export default function Empresa() {
             </div>
 
             <div className="lg:col-span-5 relative">
-              <div className="rounded-2xl overflow-hidden shadow-pilar-lg border-4 border-white">
-                <img
-                  src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80"
-                  alt="Canteiro de obras Pilar Equipamentos"
-                  className="w-full h-80 object-cover"
-                />
+              <div className="rounded-2xl overflow-hidden shadow-pilar-lg border-4 border-white bg-slate-100">
+                <picture>
+                  <source srcSet="/images/empresa/empresapilar.webp" type="image/webp" />
+                  <img
+                    src="/images/empresa/empresapilar.png"
+                    alt="Trajetória da Pilar Equipamentos para Construção"
+                    className="w-full h-80 sm:h-96 object-cover object-center"
+                  />
+                </picture>
               </div>
               <div className="absolute -bottom-6 -left-6 bg-pilar-charcoal text-white p-5 rounded-2xl shadow-pilar-lg hidden sm:block max-w-xs border border-pilar-terracotta">
                 <p className="text-xs font-bold text-pilar-red">Garantia Operacional</p>
