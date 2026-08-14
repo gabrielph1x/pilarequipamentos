@@ -63,7 +63,12 @@ server.listen(PORT, async () => {
   console.log(`Server running at http://localhost:${PORT}`);
 
   try {
+    const executablePath = fs.existsSync('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
+      ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+      : 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+
     const browser = await puppeteer.launch({
+      executablePath,
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
