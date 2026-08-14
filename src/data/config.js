@@ -6,7 +6,8 @@
  */
 
 // Número de WhatsApp principal de conversão (formato internacional: DDI + DDD + Número)
-export const DEFAULT_WHATSAPP_NUMBER = "5531999999999"; 
+export const DEFAULT_WHATSAPP_NUMBER = "5531987910025"; 
+export const DISPLAY_WHATSAPP_NUMBER = "+55 31 98791-0025"; 
 
 export const COMPANY_INFO = {
   name: "Pilar Equipamentos",
@@ -145,7 +146,7 @@ export const COMPANY_INFO = {
       address: "Rua Moema, 370, Bairro Padre Eustáquio, Belo Horizonte/MG",
       cep: "30730-580",
       phones: ["(31) 3462-6541", "(31) 3464-5595"],
-      whatsapp: "5531999999999", // Altere aqui se o WhatsApp da unidade BH for diferente
+      whatsapp: DEFAULT_WHATSAPP_NUMBER, // +55 31 98791-0025
       hours: "Segunda a Sexta, 07:30 às 17:30",
       mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2721867160756!2d-43.97235142386866!3d-19.912952838321035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69719ebcb0131%3A0xa618991b1aa888c0!2sR.%20Moema%2C%20370%20-%20Padre%20Eust%C3%A1quio%2C%20Belo%20Horizonte%20-%20MG%2C%2030730-580!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
     },
@@ -156,7 +157,7 @@ export const COMPANY_INFO = {
       address: "Rua Farmacêutico Orlando Guerra, 60, Bairro Bandeirinhas, Conceição do Mato Dentro/MG",
       cep: "35860-000",
       phones: ["(31) 3868-1939"],
-      whatsapp: "5531999999999", // Altere aqui se o WhatsApp da unidade CMD for diferente
+      whatsapp: DEFAULT_WHATSAPP_NUMBER, // +55 31 98791-0025
       hours: "Segunda a Sexta, 07:30 às 17:30",
       mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.423987123987!2d-43.432100!3d-19.034500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAyJzA0LjIiUyA0M8KwMjUnNTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
     }

@@ -65,9 +65,9 @@ export default function Home() {
       <section className="relative bg-[#332929] text-white min-h-[480px] sm:min-h-[520px] md:min-h-[600px] flex items-center overflow-hidden w-full">
         {/* Background Image com Overlay Escuro High-Res Contrast */}
         <div
-          className="absolute inset-0 bg-cover bg-center z-0 scale-105 transform animate-pulse-subtle"
+          className="absolute inset-0 bg-cover bg-center z-0"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1920&q=80')`
+            backgroundImage: `url('/images/home/pilarhomepage.webp')`
           }}
         />
         <div className="absolute inset-0 bg-hero-overlay z-10" />
