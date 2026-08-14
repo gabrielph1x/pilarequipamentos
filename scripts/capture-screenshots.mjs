@@ -65,6 +65,7 @@ server.listen(PORT, async () => {
   try {
     const browser = await puppeteer.launch({
       headless: true,
+      executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     const page = await browser.newPage();
@@ -73,8 +74,8 @@ server.listen(PORT, async () => {
     // 1. Home
     console.log('Capturing 01-home.png...');
     await page.goto(`http://localhost:${PORT}/`, { waitUntil: 'networkidle0' });
-    await page.evaluate(() => window.scrollBy(0, 200));
-    await new Promise(r => setTimeout(r, 600));
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await new Promise(r => setTimeout(r, 800));
     await page.screenshot({ path: path.join(outputDir, '01-home.png') });
 
     // 2. Empresa
