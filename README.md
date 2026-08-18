@@ -230,20 +230,6 @@ Por favor, me informe sobre valores, prazos de entrega e disponibilidade. Obriga
 
 A página de contato consolida o atendimento da empresa nas suas regiões de atuação.
 
-* **Atendimento Descomplicado:** Foco no atendimento por telefone e WhatsApp.
-* **Unidade 1 — Belo Horizonte / MG (Padre Eustáquio):**
-  * Endereço: Rua Moema, 370, Bairro Padre Eustáquio, Belo Horizonte/MG — CEP 30730-580.
-  * Telefones Fixos Clicáveis: `(31) 3462-6541` | `(31) 3464-5595` (ao tocar no celular, efetua a ligação automaticamente).
-  * Horário: Segunda a Sexta, das 07:30 às 17:30.
-  * Botão direto para o WhatsApp da unidade BH.
-  * **Mapa Interativo Google Maps:** Incorporado e colorido diretamente na página.
-* **Unidade 2 — Conceição do Mato Dentro / MG (Bandeirinhas):**
-  * Endereço: Rua Farmacêutico Orlando Guerra, 60, Bairro Bandeirinhas, Conceição do Mato Dentro/MG — CEP 35860-000.
-  * Telefone Fixo Clicável: `(31) 3868-1939`.
-  * Horário: Segunda a Sexta, das 07:30 às 17:30.
-  * Botão direto para o WhatsApp da unidade CMD.
-  * **Mapa Interativo Google Maps:** Incorporado diretamente na página.
-
 ---
 
 ## 3. Funcionalidades e Diferenciais Técnicos
