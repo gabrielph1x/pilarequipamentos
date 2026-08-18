@@ -12,7 +12,7 @@ export default {
           terracotta: '#853536',   // Vermelho queimado / terracota
           wine: '#523132',         // Vinho escuro
           charcoal: '#332929',     // Marrom-grafite quase preto (âncora)
-          bg: '#F5F3F2',           // Off-white neutro para respiro
+          bg: '#F5F3F2',           // Offwhite neutro para respiro
           card: '#FFFFFF',         // Fundo de cards
           border: '#E2DDD9'        // Borda suave
         },
